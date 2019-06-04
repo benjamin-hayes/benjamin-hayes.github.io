@@ -1,0 +1,329 @@
+body{
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+/* GLOBAL ATTRIBUES ==============================================*/
+.container{
+	width: 80%; /* We want the site to be responsive so we use percentage as opposed to specific pixels */
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+input.buttonWatch {
+  	height: 60px;
+	background: #ffffff;
+	border: 3px solid black;
+	border-color: #494949
+	border-opacity; 0.7;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #494949;
+	opacity: 1.0;
+	font-size: 20px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+  	border-radius: 16px;
+  	font-family: 'Rajdhani', sans-serif;
+  	cursor: pointer;
+  	text-transform: uppercase;
+  	z-index: 1;
+}
+
+input.buttonWatch:hover {
+  background-color: #000000;
+  opacity: .7;
+  color: #ffffff;
+}
+
+
+/* HEADER ATTRIBUTES =============================================*/
+
+header{
+	background: #ffffff; /* tan color - #EED1A1*/
+	color: #494949;
+	padding-top: 18px;
+	min-height: 60px;
+	border-bottom: #33D1FF 3px solid;
+
+}
+
+header a{
+	color: #494949;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px; /* order of numbers goes top(0), right(20), bottom(0), left(20) */
+}
+
+header #branding {
+	float: left;
+	margin-top: 7px;
+	text-transform: uppercase;
+}
+
+header #branding img{
+	padding-right: 15px;
+}
+
+header #branding h1{
+	margin: 0;
+	font-size: 24px;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+	color: #33D1FF;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #494949;
+	f
+}
+
+/* SECTION =========================================================*/
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.videoHeader {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* SECTION =========================================================*/
+
+#seperator{
+	height: 10px;
+	width: 100%;
+	background: #33D1FF;
+}
+
+#seperatorW{
+	height: 10px;
+	width: 100%;
+	background: #f4f4f4;
+}
+
+#seperatorThin{
+	height: 5px;
+	width: 100%;
+	background: #33D1FF;
+}
+
+
+/* SHOWCASE 1 ======================================================*/
+
+#showcase1{
+	min-height: 700px;
+	background: url('../img/swim_picture.jpg');
+	background-position: center;
+	background-size: 100%;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase1 h1,
+#showcase2 h1{
+	margin-top: 250px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#showcase1 p,
+#showcase2 p{
+	font-size: 20px;
+}
+
+#showcase2{
+	min-height: 700px;
+	background: url('../img/swim_picture.jpg');
+	background-position: center;
+	background-size: 100%;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* IFRAME ========================================================*/
+
+.iframe-container{
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	/*padding-left: 10%;
+	padding-right: 10%;*/
+	height: 0;
+	ddisplay: flex;
+    justify-content: center;
+}
+
+.iframe-container iframe{
+	position: absolute;
+	top: 0;
+	/*left: 0;*/
+	width: 90%;
+	height: 100%;
+	display: flex;
+    justify-content: center;
+}
+
+
+/* CONTACT =======================================================*/
+
+#contact{
+	padding: 15px;
+	color: #ffffff;
+	background: #35424a;
+}
+
+#contact h1{
+	float: left
+}
+
+#contact form{
+	float: right;
+	margin-top: 15px;
+}
+
+#contact input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+#centerButton{
+	display: flex;
+	justify-content: center;
+}
+
+#contactInfo {
+	text-align: center;
+}
+
+
+/* ABOUT =====================================++==================*/
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.about #about{
+	width: 70%;
+	font-size: 20px;
+}
+
+.about #contact{
+	text-align: center;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding-right: auto;
+  	padding-left: auto;
+}
+
+/* VIDEO PAGE COLUMN SETUP =======================================*/
+.column {
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 2%;
+}
+
+/* FOOTER ========================================================*/
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background: #494949;
+	text-align: center;
+}
+
+
